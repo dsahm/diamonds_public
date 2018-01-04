@@ -1,0 +1,24 @@
+<resources>
+
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:colorControlHighlight">@color/colorPrimaryRipple</item>
+
+        <!--<item name="android:activityOpenEnterAnimation">@anim/enter_from_right</item>-->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+    </style>
+
+    <!--<style name="AppThemeDetail" parent="AppTheme.Base">-->
+        <!--<item name="android:windowContentTransitions">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item><item name="android:colorBackground">@android:color/transparent</item>-->
+
+        <!--<item name="android:activityOpenEnterAnimation">@anim/enter_from_right</item>-->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">false</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">false</item>-->
+    <!--</style>-->
+
+
+
+</resources>

@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    signingConfigs {
+        release {
+            keyAlias 'XXX'
+            keyPassword 'XXX'
+            storeFile file('XXX')
+            storePassword 'XXX'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.darmstadt.diamonds_android"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 5
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    final DAGGER_VERSION = "2.6"
+    final SUPPORT_LIBRARY_VERSION = "26.1.0"
+    final CONSTRAINT_LAYOUT_VERSION = "1.0.2"
+    final RETROFIT_VERSION = "2.3.0"
+    final RETROFIT_GSON_CONVERTER_VERSION = "2.3.0"
+    final RXJAVA_VERSION = "2.1.5"
+    final RXANDROID_VERSION = "2.0.1"
+    final JUNIT_VERSION = "4.12"
+    final ESPRESSO_VERSION = "2.2.2"
+    final FIREBASE_VERSION = "11.4.2"
+    final LOGGER_VERSION = "2.1.1"
+    final BUTTERKNIFE_VERSION = "8.8.1"
+    final OKHTTPVERSION = '3.8.0'
+    final LEAK_CANARY_VERSION = '1.5.4'
+    final GLIDE_VERSION = '4.2.0'
+    final TYPER_VERSION = '1.0.0'
+    final SWIPE_REVEAL_VERSION = '2.9.2'
+    final STICKY_HEADERS_VERSION = '0.4.9'
+    final EASING_VERSION = "2.0@aar"
+    final ANDROIDANIMATIONS_VERSION = "2.0@aar"
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile("com.android.support.test.espresso:espresso-core:${ESPRESSO_VERSION}", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.orhanobut:logger:${LOGGER_VERSION}"
+    compile "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+    compile "com.brandongogetap:stickyheaders:${STICKY_HEADERS_VERSION}"
+    compile "com.daimajia.easing:library:${EASING_VERSION}"
+    compile "com.daimajia.androidanimations:library:${ANDROIDANIMATIONS_VERSION}"
+    debugCompile "com.squareup.leakcanary:leakcanary-android:${LEAK_CANARY_VERSION}"
+    releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:${LEAK_CANARY_VERSION}"
+    compile "com.elmargomez.typer:typerlib:${TYPER_VERSION}"
+    compile "net.cachapa.expandablelayout:expandablelayout:${SWIPE_REVEAL_VERSION}"
+    compile "com.google.firebase:firebase-messaging:${FIREBASE_VERSION}"
+    compile "com.google.firebase:firebase-auth:${FIREBASE_VERSION}"
+    compile "io.reactivex.rxjava2:rxjava:${RXJAVA_VERSION}"
+    compile "io.reactivex.rxjava2:rxandroid:${RXANDROID_VERSION}"
+    compile "com.squareup.retrofit2:retrofit:${RETROFIT_VERSION}"
+    compile "com.squareup.retrofit2:adapter-rxjava2:${RETROFIT_VERSION}"
+    compile "com.squareup.retrofit2:converter-gson:${RETROFIT_GSON_CONVERTER_VERSION}"
+    compile "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    compile "com.android.support:design:${SUPPORT_LIBRARY_VERSION}"
+    compile "com.android.support:recyclerview-v7:${SUPPORT_LIBRARY_VERSION}"
+    compile "com.android.support:transition:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.android.support:cardview-v7:${SUPPORT_LIBRARY_VERSION}"
+    compile "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT_VERSION}"
+    compile "com.google.dagger:dagger:${DAGGER_VERSION}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${DAGGER_VERSION}"
+    compile "com.squareup.okhttp3:logging-interceptor:${OKHTTPVERSION}"
+    compile "com.jakewharton:butterknife:${BUTTERKNIFE_VERSION}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${BUTTERKNIFE_VERSION}"
+    testCompile "junit:junit:${JUNIT_VERSION}"
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true;
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

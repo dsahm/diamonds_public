@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_normal_half">4dp</dimen>
+    <dimen name="padding_smallish">6dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_big">16dp</dimen>
+    <dimen name="padding_list_top">20dp</dimen>
+
+    <dimen name="padding_extra_big">32dp</dimen>
+    <dimen name="app_bar_height">210dp</dimen>
+    <!--<dimen name="app_bar_height">170dp</dimen>-->
+
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_body_custom">16sp</dimen>
+    <dimen name="text_size_toolbar">20sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+
+    <dimen name="cardview_action_icon_size">28dp</dimen>
+    <dimen name="team_logo_size">46dp</dimen>
+
+
+</resources>

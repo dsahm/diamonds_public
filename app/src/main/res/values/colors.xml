@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#0277bd</color> &lt;!&ndash; light blue &ndash;&gt;-->
+    <color name="colorPrimaryDark">#004781</color> <!-- dark blue -->
+    <color name="colorPrimary">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryTransparent">#c3004781</color>
+    <color name="colorPrimaryRipple">#64004781</color>
+    <color name="lightBlue">#0077b3</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+    <color name="silver">#d6d6d6</color>
+    <color name="navy">#021f49</color>
+    <color name="navyTransparent">#7f021f49</color>
+    <color name="white">#FFF</color>
+    <color name="whiteMinimalTransparent">#f0ffffff</color>
+    <color name="whiteMaxTransparency">#1effffff</color>
+    <color name="silverTransparent">#78d6d6d6</color>
+    <color name="ticketOrange">#f87b03</color>
+    <color name="lightGray">#f0f0f0</color>
+    <color name="transparentBlack">#7F000000</color>
+    <color name="dark_grey">#616161</color>
+
+</resources>
+
+<!--
+    public static let darkBlue = UIColor(red: 0/255, green: 71/255, blue: 129/255, alpha: 1)
+    public static let lightBlue =  UIColor(red: 0/255, green: 119/255, blue: 179/255, alpha: 1)
+    public static let silver = UIColor(red: 214/255, green: 214/255, blue: 214/255, alpha: 1)
+    public static let lightsilver = UIColor(red: 214/255, green: 214/255, blue: 214/255, alpha: 1)
+    public static let navy = UIColor(red: 2/255, green: 31/255, blue: 73/255, alpha: 1)
+    public static let navyTransparent = UIColor(red: 2/255, green: 31/255, blue: 73/255, alpha: 0.5)
+    public static let white = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+    public static let whiteMinimalTransparent = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.9)
+    public static let ticketOrange = UIColor(red: 248/255, green: 123/255, blue: 3/255, alpha: 1.0)
+    public static let lightGray = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
+-->

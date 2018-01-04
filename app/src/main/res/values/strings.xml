@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Darmstadt Diamonds</string>
+    <string name="news">Neuigkeiten</string>
+    <string name="dates">Events</string>
+    <string name="addresses">Adressen</string>
+    <string name="club">Verein</string>
+    <string name="data_loading_error">Die Daten konnten nicht geladen werden</string>
+    <string name="news_transition_name">news_transition</string>
+    <string name="male">Herren</string>
+    <string name="u19">U19</string>
+    <string name="training">Training</string>
+    <string name="events">Events</string>
+    <string name="finished">Fertig</string>
+    <string name="calendar_description">Football-Spiel</string>
+    <string name="football_title">Football-Spiel: %$1s - %$2s</string>
+    <string name="exit">Noch einmal drücken um die App zu beenden</string>
+</resources>

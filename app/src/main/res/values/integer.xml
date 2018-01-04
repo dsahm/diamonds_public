@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="slide_duration">300</integer>
+    <integer name="fade_duration">300</integer>
+    <integer name="expand_animation_duration">200</integer>
+
+</resources>

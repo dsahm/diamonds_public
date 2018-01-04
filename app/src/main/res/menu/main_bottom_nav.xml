@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_news"
+        android:title="@string/news"
+        android:icon="@drawable/ic_library_books_white_48dp" />
+    <item android:id="@+id/bottom_events"
+        android:title="@string/events"
+        android:icon="@drawable/ic_event_white_48dp" />
+    <item android:id="@+id/bottom_addresses"
+        android:title="@string/addresses"
+        android:icon="@drawable/ic_map_white_48dp" />
+    <!--<item android:id="@+id/bottom_club"-->
+        <!--android:title="@string/club"-->
+        <!--android:icon="@drawable/ic_home_white_48dp" />-->
+</menu>

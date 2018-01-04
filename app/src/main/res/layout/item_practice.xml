@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/silver_ripple"
+            android:id="@+id/linlay_main_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_smallish"
+                android:paddingEnd="@dimen/padding_normal"
+                android:paddingStart="@dimen/padding_big"
+                android:paddingTop="@dimen/padding_smallish">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_body_custom"
+                        android:textStyle="bold"
+                        tools:text="Title" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_body"
+                        tools:text="sub" />
+
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_body"
+                        tools:text="subsubub" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/expand_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_expand_more_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="@integer/expand_animation_duration"
+        app:el_expanded="false"
+        app:el_parallax="0">
+
+        <LinearLayout
+            android:paddingEnd="@dimen/padding_normal"
+            android:id="@+id/linlay_action_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:foregroundGravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:background="@drawable/circle_ripple"
+                android:id="@+id/way_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_normal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/bus"
+                android:tint="@android:color/darker_gray" />
+
+            <ImageView
+                android:background="@drawable/circle_ripple"
+                android:id="@+id/map"
+                android:layout_width="@dimen/cardview_action_icon_size"
+                android:layout_height="@dimen/cardview_action_icon_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_normal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:src="@drawable/map"
+                android:tint="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>
+
